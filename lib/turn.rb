@@ -1,8 +1,8 @@
 def turn(board)
   puts "Please enter 1-9: #{input = gets.chomp}"
-  #input = gets.chomp
-  while input_to_index(input).valid_move?(board, pos) == true
-    move(board,pos, char)
+  input = input_to_index(input)
+  if valid_move?(board, input) == true#input = gets.chomp
+    move(board,pos, char)  
   end
 end
 
