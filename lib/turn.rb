@@ -15,7 +15,7 @@ def input_to_index(input)
 end
 
 def valid_move?(board, pos)
-  return true while 0 < pos < 9 && position_taken?(board, pos) == false
+  return true while pos.between?(0,9) && position_taken?(board, pos) == false
   return false
 end
 
