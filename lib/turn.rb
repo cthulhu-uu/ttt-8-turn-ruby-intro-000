@@ -22,6 +22,6 @@ def position_taken?(board, pos)
   return true
 end
 
-def move(board, pos, char = "X")
+def move(board, pos = gets.chomp, char = "X")
   board[pos] = char
 end
