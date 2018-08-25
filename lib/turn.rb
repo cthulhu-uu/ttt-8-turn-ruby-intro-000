@@ -22,7 +22,7 @@ def position_taken?(board, pos)
   return true
 end
 
-def input_to_index(gets.chomp)
+def input_to_index(input)
   input = gets.chomp.to_i - 1
 end
 
