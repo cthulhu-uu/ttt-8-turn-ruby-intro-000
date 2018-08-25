@@ -1,4 +1,4 @@
-def turn
+def turn(board)
   puts "Please enter 1-9: #{gets.chomp}"
   #input = gets.chomp
   while input_to_index(input).valid_move? == true
