@@ -10,10 +10,18 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def valid_move(board, pos)
-  return true while board[pos] < 9 
+def valid_move?(board, pos)
+  return true while board[pos] < 9 && position_taken? == false
+  return false
 end
 
-def move
+def position_taken?(board, pos)
+  if board[pos] == " "
+    return false
+  end
+  return true
+end 
 
+def move(board, pos, char = "X")
+  board[pos] = char
 end
