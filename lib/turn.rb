@@ -23,7 +23,8 @@ def position_taken?(board, pos)
 end
 
 def input_to_index(input)
-  input = gets.chomp.to_i - 1
+  input = gets.chomp
+  input.to_i - 1
 end
 
 def move(board, pos = gets.chomp, char = "X")
