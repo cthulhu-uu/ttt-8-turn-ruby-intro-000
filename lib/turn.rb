@@ -20,7 +20,7 @@ def valid_move?(board, pos)
 end
 
 def position_taken?(board, pos)
-  if board[pos] == " "
+  if board[pos] == " " || board[pos] == "" | board[pos] == nil
     return false
   end
   return true
