@@ -20,7 +20,7 @@ def position_taken?(board, pos)
     return false
   end
   return true
-end 
+end
 
 def move(board, pos, char = "X")
   board[pos] = char
