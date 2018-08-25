@@ -10,6 +10,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def input_to_index(input)
+  input.to_i - 1
+end
+
 def valid_move?(board, pos)
   return true while board[pos] < 9 && position_taken? == false
   return false
@@ -20,10 +24,6 @@ def position_taken?(board, pos)
     return false
   end
   return true
-end
-
-def input_to_index(input)
-  input.to_i - 1
 end
 
 def move(board, pos, char = "X")
